@@ -2,14 +2,16 @@ var Main = /** @class */ (function () {
     function Main() {
     }
     Main.prototype.init = function () {
-        fetch("fragments/_top-menu.html")
+        var url = new URL("/fragments/_top-menu.html", window.location.origin);
+        fetch(url.href)
             .then(function (rsp) {
             return rsp.text();
         })
             .then(function (content) {
             document.getElementById("top-menu-container").innerHTML = content;
         });
-        fetch("fragments/_footer.html")
+        url = new URL("/fragments/_footer.html", window.location.origin);
+        fetch(url.href)
             .then(function (rsp) {
             return rsp.text();
         })

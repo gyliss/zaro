@@ -1,7 +1,8 @@
 class Main {
 
     init() {
-        fetch("fragments/_top-menu.html")
+        let url = new URL("/fragments/_top-menu.html", window.location.origin);
+        fetch(url.href)
             .then(rsp => {
                 return rsp.text();
             })
@@ -9,7 +10,8 @@ class Main {
                 document.getElementById("top-menu-container").innerHTML = content;
             });
 
-        fetch("fragments/_footer.html")
+        url = new URL("/fragments/_footer.html", window.location.origin);
+        fetch(url.href)
             .then(rsp => {
                 return rsp.text();
             })
