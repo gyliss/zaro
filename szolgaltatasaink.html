@@ -1,10 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACME Inc. -Szolgáltatásaink</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="css/top-menu.css" rel="stylesheet" type="text/css">
+        <link href="css/szolgaltatasaink.css" rel="stylesheet" type="text/css">
+        <link href="css/footer.css" rel="stylesheet" type="text/css">
+        <script src="js/main.js"></script>
+    </head>
 
-</body>
+    <body>
+        <div class="container">
+            <nav id="top-menu-container">
+            </nav>
+
+            <section class="szolgaltatasaink-container">
+                <div class="caption">
+                    Szolgáltatásaink
+                </div>
+                <div class="content">
+                    <div class="item">
+                        <div class="icon">
+                            <svg>
+                                <use xlink:href="img/szolgaltatasok.svg#web-design-icon"/>
+                            </svg>
+                        </div>
+                        <div class="title">
+                            Weboldal tervezés<br> és fejlesztés
+                        </div>
+                        <div class="description">
+                            A weboldalkészítő cég<br> szakemberei által készített egyedi<br>  és modern weboldalak tervezése<br>  és fejlesztése, amelyek<br>  megfelelnek az ügyfél igényeinek<br>  és célcsoportjának.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <svg>
+                                <use href="img/szolgaltatasok.svg#business-management-icon"/>
+                            </svg>
+                        </div>
+                        <div class="title">
+                            Egyedi weboldal<br> design készítése
+                        </div>
+                        <div class="description">
+                            Az ügyfelek személyre szabott és<br> kreatív weboldal design<br> lehetőségét kapják, amely a<br> vállalkozásuk stílusához és<br> brandjéhez igazodik, és segít<br> kiemelkedni a versenytársak közül.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <svg>
+                                <use xlink:href="img/szolgaltatasok.svg#desktop-smartphone-transfer-icon"/>
+                            </svg>
+                        </div>
+                        <div class="title">
+                            Responszív weboldal<br> kialakítása
+                        </div>
+                        <div class="description">
+                            A weboldalak olyan kialakítása,<br> amely lehetővé teszi a tökéletes<br> megjelenést és funkcionalitást<br> mindenféle eszközön, beleértve a<br> mobiltelefonokat és táblagépeket<br> is, biztosítva a felhasználóbarát<br> élményt.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <svg>
+                                <use xlink:href="img/szolgaltatasok.svg#edit-list-icon"/>
+                            </svg>
+                        </div>
+                        <div class="title">
+                            Tartalomkezelő rendszer<br> beállítása és testreszabása
+                        </div>
+                        <div class="description">
+                            A weboldalakhoz tartalomkezelő rendszerek telepítése és testreszabása, amelyek lehetővé teszik az ügyfelek számára, hogy könnyedén frissítsék és kezeljék a weboldaluk tartalmát anélkül, hogy szakértői segítségre lenne szükségük.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <svg>
+                                <use xlink:href="img/szolgaltatasok.svg#target-icon"/>
+                            </svg>
+                        </div>
+                        <div class="title">
+                            SEO optimalizálás és<br>
+                            weboldal teljesítményjavítás
+                        </div>
+                        <div class="description">
+                            A weboldalak optimalizálása a keresőmotorok számára, hogy jobb helyezést érjenek el a keresési eredményekben, valamint a weboldalak sebességének és teljesítményének javítása, hogy a látogatók számára gyors és zökkenőmentes élményt nyújtsanak.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icon">
+                            <svg>
+                                <use xlink:href="img/szolgaltatasok.svg#maintenance-icon"/>
+                            </svg>
+                        </div>
+                        <div class="title">
+                            Karbantartás és támogatás
+                        </div>
+                        <div class="description">
+                            A weboldalak folyamatos karbantartása és támogatása, beleértve a biztonsági frissítéseket, hibajavításokat és technikai támogatást, hogy a weboldal mindig optimális állapotban legyen és a felhasználók elégedettek legyenek.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer id="footer">
+            </footer>
+        </div>
+    </body>
+    <script>
+        var gMain = new Main();
+
+        document.addEventListener("DOMContentLoaded", (event) => {
+            gMain.init();
+        });
+    </script>
 </html>

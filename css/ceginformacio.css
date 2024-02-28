@@ -1,0 +1,146 @@
+.szolgaltatasaink-container {
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    min-height: 471px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 35px;
+}
+
+.szolgaltatasaink-container .content {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/img/weboldalakatkeszitunk.png");
+    background-repeat: no-repeat;
+    background-position: left, top, bottom;
+    background-size: contain;
+}
+
+.szolgaltatasaink-container .caption {
+    font-size: clamp(3.125rem, 6.573vw + 1.585rem, 7.5rem);
+    font-weight: 400;
+    line-height: 141px;
+    margin-top: 94px;
+    margin-left: clamp(0.313rem, 41.221vw + -9.349rem, 27.75rem);
+    text-shadow: 0px 0px 15px 0px #FFFFFF;
+}
+
+.szolgaltatasaink-container a {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: auto 0 0 auto;
+    white-space: nowrap;
+}
+
+.rolunkmondtak-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: var(--backgound-invert);
+    color: var(--font-color-invert);
+}
+
+.rolunkmondtak-container .caption {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 47px;
+    align-self: center;
+}
+
+.rolunkmondtak-container .content {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    gap: clamp(0.313rem, 6.385vw + -1.184rem, 4.563rem);
+}
+
+@media (max-width: 1300px) {
+    .rolunkmondtak-container .content {
+       flex-direction: column
+    }
+}
+
+.rolunkmondtak-container .notion {
+    display: flex;
+    flex-direction: column;
+    width: 378px;
+    min-height: 436px;
+    gap: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rolunkmondtak-container .avatar {
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.rolunkmondtak-container .text {
+    font-size: clamp(1.5rem, 0.563vw + 1.368rem, 1.875rem);
+    font-style: italic;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.rolunkmondtak-container .nameandtitle {
+    color: #D166FF;
+    margin-top: auto;
+    margin-bottom: 0;
+    align-self: end;
+}
+
+@media (prefers-color-scheme: dark) {
+    .rolunkmondtak-container .nameandtitle {
+        color: #7000A0;
+    }
+}
+
+.bemutatkozas-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    max-width: 1228px;
+    width: 100%;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 89px;
+}
+
+@media (max-width: 1300px) {
+    .bemutatkozas-container {
+        margin-bottom: 32px;
+    }
+}
+
+.bemutatkozas-container .caption {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 47px;
+    align-self: center;
+}
+
+.bemutatkozas-container .content {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+@media (max-width: 1300px) {
+    .bemutatkozas-container .content {
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+}

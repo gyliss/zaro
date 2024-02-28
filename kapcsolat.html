@@ -1,10 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACME Inc. -Szolgáltatásaink</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="css/top-menu.css" rel="stylesheet" type="text/css">
+        <link href="css/kapcsolat.css" rel="stylesheet" type="text/css">
+        <link href="css/footer.css" rel="stylesheet" type="text/css">
+        <script src="js/main.js"></script>
+    </head>
 
-</body>
+    <body>
+        <div class="container">
+            <nav id="top-menu-container">
+            </nav>
+            <section class="kapcsolat-container">
+                <div class="caption">
+                    Kapcsolat
+                </div>
+                <div class="content">
+                    <div class="kapcsolat">
+                        <p>
+                            <strong>Alapítás éve:</strong> 2000<br>
+                            <strong>Ágazat:</strong> Technológia és szolgáltatások<br>
+                        </p>
+                        <p>
+                            <strong>Cégprofil:</strong> Az ACME Inc. egy vezető technológiai és szolgáltató vállalat, amely innovatív megoldásokat kínál ügyfeleinek szerte a világon. Célunk, hogy a legmagasabb színvonalú termékeket és szolgáltatásokat nyújtsuk, amelyek segítik ügyfeleinket a hatékonyság növelésében és a versenyelőny megszerzésében.
+                        </p>
+                        <p>
+                            <strong>Termékek és szolgáltatások:</strong>
+                            <ul>
+                                <li>Szoftverfejlesztés és testreszabás</li>
+                                <li>Adatkezelés és elemzés</li>
+                                <li>Cloud alapú megoldások</li>
+                                <li>Biztonsági rendszerek és tanácsadás</li>
+                                <li>Ügyfélkapcsolat-kezelés (CRM) rendszerek</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <strong>Ügyfélközpontúság:</strong> Az ACME Inc. kiemelkedően fontosnak tartja ügyfelei elégedettségét és elégedettségüket. Ügyfélorientált szemléletünkkel és a legjobb ügyfélszolgálati gyakorlatok alkalmazásával biztosítjuk, hogy ügyfeleink mindig a legjobb szolgáltatásokat kapják tőlünk.
+                        </p>
+                        <div class="contact">
+                            <strong>Kapcsolat:</strong>
+                            <div>Weboldal: <a href="www.acmeinc.com">www.acmeinc.com</a></div>
+                            <div>Telefon: <a href="tel:+36 123 456 789">+36 123 456 789</a></div>
+                            <div>E-mail: <a href="mailto:info@acmeinc.com">info@acmeinc.com</a></div>
+                        </div>
+                    </div>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2693.8485912040987!2d21.621055776096156!3d47.5318106762461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shu!2shu!4v1708366495299!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+            <section class="message-container">
+                <form id="message" method="post" action="www.acmeinc.com/message">
+                    <div class="input-group">
+                        <input id="message-name" type="text">
+                        <label for="message-name">Név</label>
+                    </div>
+                    <div class="input-group">
+                        <input id="message-email" type="email">
+                        <label for="message-email">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input id="message-phone" type="tel">
+                        <label for="message-phone">Telefonszám</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message-text"></textarea>
+                        <label for="message-text">Üzenet</label>
+                    </div>
+                    <button type="submit">Küldés</button>
+                </form>
+            </section>
+            <footer id="footer">
+            </footer>
+        </div>
+    </body>
+    <script>
+        var gMain = new Main();
+
+        document.addEventListener("DOMContentLoaded", (event) => {
+            gMain.init();
+        });
+    </script>
 </html>

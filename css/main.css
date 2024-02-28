@@ -1,0 +1,56 @@
+:root {
+    --font-color-dark: #EEEEF0;
+    --font-color-light: #121215;
+    --backgound-dark: #121215;
+    --backgound-light: #EEEEF0;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --font-color: var(--font-color-dark);
+        --font-color-invert: var(--font-color-light);
+        --backgound: var(--backgound-dark);
+        --backgound-invert: var(--backgound-light);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --font-color: var(--font-color-light);
+        --font-color-invert: var(--font-color-dark);
+        --backgound: var(--backgound-light);
+        --backgound-invert: var(--backgound-dark);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--font-color);
+    background: var(--backgound);
+    width: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    min-width: 375px;
+    align-items: center;
+}
+
+a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-weight: 100;
+}
+
+a:hover {
+    /* hogy ne tolja el a menu többi pozícióját */
+    text-shadow: 1px 0 0 currentColor;
+}

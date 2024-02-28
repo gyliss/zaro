@@ -1,0 +1,72 @@
+.szolgaltatasaink-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 80px;
+    padding-left: 37.5px;
+    padding-right: 37.5px;
+}
+
+@media (max-width: 826px) {
+    .szolgaltatasaink-container {
+        margin-bottom: 32px;
+    }
+}
+
+.caption {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 47px;
+    margin-top: 71px;
+    align-self: center;
+}
+
+@media (max-width: 826px) {
+    .caption {
+        display: none;
+    }
+}
+
+.content {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1280px;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    margin-top: 50px;
+    gap: 32px;
+    margin-left: auto;
+    margin-right: auto;}
+
+.icon {
+    align-self: center;
+}
+
+.icon svg {
+    height: 64px;
+    align-self: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    align-self: center;
+    text-align: center;
+    height: 56px;
+}
+
+.description {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+}

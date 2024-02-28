@@ -1,10 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ACME Inc. - Céginformáció</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="css/top-menu.css" rel="stylesheet" type="text/css">
+        <link href="css/ceginformacio.css" rel="stylesheet" type="text/css">
+        <link href="css/footer.css" rel="stylesheet" type="text/css">
+        <script src="js/main.js"></script>
+        <script src="js/ceginformacio.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <nav id="top-menu-container">
+            </nav>
+
+            <section class="szolgaltatasaink-container">
+                <div class="content">
+                    <div class="caption">
+                        Weblapokat<br>építünk
+                    </div>
+                    <a href="szolgaltatasaink.html">Szolgáltatásaink >></a>
+                </div>
+            </section>
+
+            <section class="rolunkmondtak-container">
+                <div class="caption">
+                    Rólunk mondták
+                </div>
+                <div class="content">
+                    <div class="notion">
+                        <img class="avatar">
+                        <div class="text">
+                            Ezzel a céggel bármikor dolgoznék. Alaposak, pontosak, gyorsan megértik az igényeimet.
+                        </div>
+                        <div class="nameandtitle">
+                            Rita - marketing
+                        </div>
+                    </div>
+                    <div class="notion">
+                        <img class="avatar">
+                        <div class="text">
+                            Magasan képzett szakemberekkel találkoztam, minden apró részletre odafigyeltek, nem tudnék kifogást emelni!
+                        </div>
+                        <div class="nameandtitle">
+                            Szilvi - CEO
+                        </div>
+                    </div>
+                    <div class="notion">
+                        <img class="avatar">
+                        <div class="text">
+                            Akár a legapróbb igénnyel is fordulhatok hozzájuk, pillanatok alatt megcsinálják, még sosem dolgoztam ennyire agilis csapattal
+                        </div>
+                        <div class="nameandtitle">
+                            Dezső - HR
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="bemutatkozas-container">
+                <div class="caption">
+                    Bemutatkozás
+                </div>
+                <div class="content">
+                    <p>
+                        A 20 éve működő weboldalkészítő cégünk elkötelezett az ügyfelek számára nyújtott minőségi szolgáltatások iránt.<br>
+                        Az évek során számos sikeres projektet valósítottunk meg, és büszkék vagyunk arra, hogy ügyfeleink elégedettek a munkánkkal. Tapasztalt csapatunk kreatív és innovatív megoldásokat kínál, hogy minden egyes weboldalunk egyedülálló legyen és kiemelkedjen a versenytársak közül.<br>
+                    </p>
+                    <p>
+                        Az ügyfélközpontú megközelítésünk lehetővé teszi számunkra, hogy megértsük az ügyfelek igényeit és céljait.<br>
+                        Ezáltal pontosan tudjuk, hogyan hozzuk létre az ideális weboldalt az üzleti tevékenységük támogatására.<br>
+                        Rendszeresen kommunikálunk az ügyfelekkel, hogy biztosítsuk, hogy minden fázisban megfeleljenek az elvárások<br>
+                        és hogy a weboldal tökéletesen tükrözze az ügyfél márkáját és értékeit.<br>
+                    </p>
+                    <p>
+                        Széleskörű szolgáltatásokat kínálunk, amelyek magukban foglalják a weboldal tervezését és fejlesztését, a<br>
+                        tartalomkezelő rendszerek beállítását, az arculattervezést és az online marketing stratégiák kidolgozását.<br>
+                        Folyamatosan követjük a legújabb trendeket és technológiákat, hogy biztosítsuk ügyfeleinknek a legjobb és<br>
+                        leginnovatívabb megoldásokat.<br>
+                    </p>
+                    <p>
+                        Ha olyan weboldalt szeretne, amely hatékonyan és vonzóan mutatja be vállalkozását, akkor bízzon bennünk.<br>
+                        Tapasztalt csapatunk készen áll arra, hogy segítsen megvalósítani a webes céljait és növelje az online jelenlétét.<br>
+                    </p>
+                </div>
+            </section>
+            <footer id="footer">
+            </footer>
+        </div>
+    </body>
+
+    <script>
+        var gMain = new Main();
+        var gCeginformacio = new Ceginformacio();
+
+        document.addEventListener("DOMContentLoaded", (event) => {
+            gMain.init();
+            gCeginformacio.init();
+        });
+    </script>
 </html>

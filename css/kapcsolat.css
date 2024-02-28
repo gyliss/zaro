@@ -1,0 +1,168 @@
+.kapcsolat-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: var(--backgound-invert);
+    color: var(--font-color-invert);
+}
+
+.caption {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 47px;
+    margin-top: 71px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    max-width: 1280px;
+    margin-top: 50px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 80px;
+    align-self: center;
+}
+
+@media (max-width: 1000px) {
+    .content {
+        flex-direction: column;
+        gap: 64px;
+    }
+}
+
+.kapcsolat {
+    max-width: 702px;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.kapcsolat strong {
+    font-weight: 700;
+}
+
+.kapcsolat p {
+    margin-top: 0;
+}
+
+.map {
+    width: 450px;
+    height: 722px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+@media (max-width: 1000px) {
+    .map {
+        max-height: 400px;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact a {
+    color: var(--font-color-invert);
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (max-width: 1206px) {
+    .message-container {
+        padding: 32px;
+    }
+}
+
+#message {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 26px;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin-top: 50px;
+    margin-left: 37px;
+    margin-right:37px;
+    align-self: center;
+}
+
+@media (max-width: 1206px) {
+    #message {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 37px;
+        padding-right: 37px;
+        gap: 26px;
+    }
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.input-group:has(#message-text) {
+    width: 100%;
+}
+
+#message input, textarea {
+    font-size: 24px;
+    color: var(--font-color);
+    background-color: #888888;
+    border-bottom: 4px solid #A0009B;
+}
+
+#message button {
+    width: 200px;
+    height: 54px;
+    padding: 13px 63px 13px 63px;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--font-color);
+    background: linear-gradient(91.93deg, #7000A0 0.76%, #A0009B 99.64%);
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+@media (max-width: 1206px) {
+    #message button {
+        margin-right: auto;
+        margin-top: unset;
+    }
+}
+
+
+#message-name, #message-email, #message-phone {
+    min-width: 360px;
+    min-height: 50px;
+}
+
+@media (max-width: 1206px) {
+    #message-name, #message-email, #message-phone {
+        min-width: unset;
+        width: 100%;
+    }
+}
+
+#message-text {
+    height: 143px;
+}

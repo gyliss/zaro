@@ -1,0 +1,14 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: clamp(12.5rem, 8.545vw + 10.497rem, 18.188rem);
+    background: linear-gradient(90.28deg, #7000A0 0.01%, #A0009B 100%);
+    font-size: clamp(3.125rem, 6.573vw + 1.585rem, 7.5rem);
+    font-weight: 400;
+    line-height: clamp(2.938rem, 8.826vw + 0.869rem, 8.813rem);
+    letter-spacing: clamp(3.125rem, 14.085vw + -0.176rem, 12.5rem);
+    text-indent: clamp(3.125rem, 14.085vw + -0.176rem, 12.5rem);
+    text-align: center;
+}

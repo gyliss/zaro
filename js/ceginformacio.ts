@@ -1,9 +1,6 @@
-
-class Ceginformacio extends Main() {
+class Ceginformacio {
 
     init() {
-        super.init();
-
         let notionsElement = document.querySelectorAll(".notion");
         let fetchSize = notionsElement.length;
         let titles = ["marketing", "CEO", "HR"];
@@ -15,7 +12,7 @@ class Ceginformacio extends Main() {
                 for (let i = 0; i < fetchSize; i++) {
                     let person = data.results[i];
                     let notionElement = notionsElement.item(i);
-                    let avatarElement = notionElement.querySelector(".avatar");
+                    let avatarElement = notionElement.querySelector(".avatar") as HTMLImageElement;
                     let nameandtitleElement = notionElement.querySelector(".nameandtitle");
                     let avatarSourceUrl = person.picture.medium;
                     let nameandtitle = person.name.first + " - " + titles[i];
